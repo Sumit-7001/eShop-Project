@@ -1,16 +1,79 @@
-# React + Vite
+# 🛒 eShop - Premium eCommerce Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+eShop is a high-performance, pixel-perfect, and fully responsive eCommerce homepage built with **React** and **Vite**. It features a modern design aesthetic with smooth animations, dynamic content, and real-time state management.
 
-Currently, two official plugins are available:
+![Project Preview](https://raw.githubusercontent.com/Sumit-7001/eShop-Project/main/public/favicon.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **🚀 Dynamic Hero Slider**: A professional-grade hero carousel that automatically cycles through featured categories (Fashion, Phones, Watches, Appliances) every 3 seconds with smooth fade-in animations.
+- **📱 Fully Responsive**: Pixel-perfect layout across all devices (Desktop, Tablet, Mobile) using pure CSS media queries and a custom mobile side-drawer menu.
+- **🛍️ Popular Categories**: A horizontal scrollable section featuring high-quality product imagery and interactive cards with hover lift effects.
+- **🔥 Top Brands**: A curated grid of premium brands using the Google Favicon service for reliability, featuring professional grayscale-to-color hover transitions.
+- **🛒 Real-time Cart State**: A functional "Add to Cart" system that updates the global state and triggers a pulse animation in the header for immediate UX feedback.
+- **💎 Premium Design**: Implements modern design principles like glassmorphism, subtle micro-animations, and a harmonious color palette.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Core**: React 18
+- **Bundler**: Vite
+- **Styling**: Vanilla CSS (Custom Variables & Modern Layouts)
+- **Icons**: Lucide React
+- **Data**: Centralized Dynamic Data Hub (`dummyData.js`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sumit-7001/eShop-Project.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd eShop-Project
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:5173/`.
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/          # Static assets (images, icons)
+├── components/      # Reusable UI components
+│   ├── common/      # Shared components (Cards, Titles)
+│   ├── home/        # Section-specific components
+│   └── layout/      # Layout components (Header, Footer)
+├── data/            # Mock data for dynamic content
+├── styles/          # Component-level CSS files
+├── App.jsx          # Main application logic & state
+└── index.css        # Global styles & design tokens
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+Built with ❤️ by [Sumit-7001](https://github.com/Sumit-7001)
