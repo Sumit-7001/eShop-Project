@@ -1,0 +1,53 @@
+.brands-section {
+  padding: 60px 0;
+  background: var(--bg-light);
+}
+
+.brands-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.brands-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.see-all-btn {
+  background: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.see-all-btn:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.brands-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 15px 0;
+  scroll-behavior: smooth;
+}
+
+.brands-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 40px 0;
+  }
+  
+  .brands-header h2 {
+    font-size: 20px;
+  }
+}
