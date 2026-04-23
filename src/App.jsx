@@ -9,11 +9,13 @@ import BannerVR from './components/home/BannerVR';
 import AppDownload from './components/home/AppDownload';
 import SectionTitle from './components/common/SectionTitle';
 import ProductCard from './components/common/ProductCard';
+import Blogs from './components/blogs/Blogs';
 import { smartphones, watches, furniture, kids } from './data/dummyData';
 import './App.css';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
+  const path = window.location.pathname;
 
   const addToCart = () => {
     setCartCount(prev => prev + 1);
@@ -24,7 +26,11 @@ function App() {
       <Header cartCount={cartCount} />
       
       <main>
-        <HeroSection onAddToCart={addToCart} />
+        {path === '/blogs' ? (
+          <Blogs />
+        ) : (
+          <>
+            <HeroSection onAddToCart={addToCart} />
         
         <CategoriesRow />
         
@@ -85,6 +91,8 @@ function App() {
         </section>
 
         <AppDownload />
+          </>
+        )}
       </main>
 
       <Footer />
